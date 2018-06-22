@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parags_ll"
+    android:orientation="vertical">
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/parag_rec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/parags_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/parags_dl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#215be2"
+            android:text="请先登录......"/>
+    </LinearLayout>
+
+</LinearLayout>

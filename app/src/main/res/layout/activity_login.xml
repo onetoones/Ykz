@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login1"
+    tools:context=".Sidepull.view.LoginActivity">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        fresco:roundedCornerRadius="7dp"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="true"
+        fresco:roundBottomLeft="true"
+        fresco:roundBottomRight="true"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        fresco:placeholderImage="@mipmap/logo"
+        />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/simpleDraweeView"
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/text_qita"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        fresco:placeholderImage="@mipmap/weixin"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundBottomLeft="true"
+        fresco:roundBottomRight="true"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="true"
+        fresco:roundedCornerRadius="15dp" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:layout_width="320dp"
+        android:layout_height="36dp"
+        android:layout_above="@+id/simpleDraweeView"
+        android:layout_alignLeft="@+id/simpleDraweeView"
+        android:layout_alignStart="@+id/simpleDraweeView"
+        android:layout_marginBottom="41dp"
+        fresco:placeholderImage="@mipmap/qq"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:roundBottomLeft="true"
+        fresco:roundBottomRight="true"
+        fresco:roundTopLeft="true"
+        fresco:roundTopRight="true"
+        fresco:roundedCornerRadius="15dp"
+        android:id="@+id/simpleDraweeView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp"
+        android:text="其他方式登录"
+        android:textSize="18sp"
+        android:textColor="#cac4c4"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="494dp"
+        android:id="@+id/text_qita" />
+
+    <ImageView
+        android:id="@+id/fanhui"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/iv_back" />
+
+
+</RelativeLayout>

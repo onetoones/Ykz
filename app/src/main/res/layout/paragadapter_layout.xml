@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/parag_tx"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="7dp"
+            fresco:placeholderImage="@mipmap/sww"
+            fresco:roundAsCircle="true" />
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/parag_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/parag_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#f00"
+                android:text="111111111"/>
+
+            <TextView
+                android:id="@+id/parag_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111111111"/>
+        </LinearLayout>
+
+        <com.example.administrator.ykz.hot.view.CustomerView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/parag_nr"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="沧海一声笑 滔滔两岸潮,浮沉随浪只记今朝,
+        苍天笑 纷纷世上潮,谁负谁胜出天知晓,
+        江山笑 烟雨遥,涛浪淘尽 红尘俗世记多娇,
+        清风笑 竟惹寂寥,豪情还剩了 一襟晚照,苍生笑 不再寂寥,豪情仍在痴痴笑笑"/>
+
+
+</LinearLayout>

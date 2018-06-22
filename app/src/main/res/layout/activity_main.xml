@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="#109de9"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:id="@+id/imageViews"
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"
+                fresco:placeholderImage="@mipmap/raw"
+                fresco:roundAsCircle="true"
+                />
+            <TextView
+                android:id="@+id/titles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_centerInParent="true"
+                android:textSize="20dp"
+                android:text="推荐" />
+
+            <ImageView
+                android:id="@+id/main_bji"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/bianji" />
+        </RelativeLayout>
+        <com.hjm.bottomtabbar.BottomTabBar
+            android:id="@+id/bottom_tab_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.hjm.bottomtabbar.BottomTabBar>
+    </LinearLayout>
+    <fragment
+        android:id="@+id/left_fragment"
+        android:name="com.example.administrator.ykz.Sidepull.view.LeftFragment"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:tag="LEFTMENU" />
+
+
+</android.support.v4.widget.DrawerLayout>

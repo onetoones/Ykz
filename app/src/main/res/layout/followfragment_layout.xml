@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/follow_ll"
+   >
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:src="@mipmap/raw_1500002643"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/follow_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/follow_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/follow_dl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#215be2"
+            android:text="请先登录......"/>
+    </LinearLayout>
+   </LinearLayout>
